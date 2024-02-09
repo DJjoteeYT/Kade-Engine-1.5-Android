@@ -40,6 +40,7 @@ jobs:
           haxelib git linc_luajit https://github.com/AndreiRudenko/linc_luajit.git
           haxelib git extension-androidtools https://github.com/MAJigsaw77/extension-androidtools.git
           haxelib git extension-videoview https://github.com/mcagabe19-stuff/extension-videoview.git
+          haxelib install hscript
       - name: Configure Android
         run: |
           haxelib run lime config ANDROID_SDK $ANDROID_HOME
@@ -108,6 +109,7 @@ jobs:
           haxelib git linc_luajit https://github.com/AndreiRudenko/linc_luajit.git
           haxelib git extension-androidtools https://github.com/MAJigsaw77/extension-androidtools.git
           haxelib git extension-videoview https://github.com/mcagabe19-stuff/extension-videoview.git
+          haxelib install hscript
       - name: Compile
         run: haxelib run lime build ios -final
       - name: Make Ipa
